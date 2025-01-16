@@ -1,0 +1,152 @@
+:root{
+    --color-principal: gray;
+    --color-secundario: rgb(67, 66, 66);
+    --color-body: rgb(179, 176, 176);
+
+}
+
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-body);
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: center;
+    background-color: var(--color-principal);
+
+}
+
+.header_encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.encabezado__img{
+width: 100%;
+height: 20rem;
+}
+
+
+
+
+
+
+.header_navegador{
+    display: flex;
+    background-color: var(--color-secundario);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navegador__logo{
+    width: 10rem;
+}
+
+
+.nav__ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+    
+}
+
+
+.navegador_busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap:0.5rem;
+    
+}
+
+.busqueda__img{
+    width: 30px;
+    height: 30px;
+}
+
+.form__busqueda{
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; 
+}
+
+
+.ul__navegador{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.main_titulo{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.main_secciones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.section1__parrafo,.section2__parrafo,.section3__parrafo{
+    text-align: center;
+    background-color: var(--color-secundario);
+    color: white;
+    width: 30%;
+}
+.section1_compras,.section2_compras,.section3_compras{
+    display: flex;
+    justify-content: end;
+}
+
+
+.compras__megusta,.compras__carrito{
+    width: 30px;
+}
+
+
+
+.section1__img,.section2__img,.section3__img{
+    width: 20rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-principal);
+    margin-top: 2rem;
+}
+
+.footer_img{
+    width: 50px;
+}
