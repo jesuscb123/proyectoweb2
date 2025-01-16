@@ -1,7 +1,7 @@
 :root{
-    --color-principal: gray;
-    --color-secundario: rgb(67, 66, 66);
-    --color-body: rgb(179, 176, 176);
+    --color-principal: rgb(205, 78, 78);
+    --color-secundario: rgb(26, 90, 128);
+    --color-body: rgb(171, 170, 170);
 
 }
 
@@ -44,7 +44,7 @@ height: 20rem;
 
 .header_navegador{
     display: flex;
-    background-color: var(--color-secundario);
+    background-color: var(--color-principal);
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -60,7 +60,6 @@ height: 20rem;
     justify-content: space-evenly;
     align-items: center;
     gap: 10rem;
-    color: white;
     
 }
 
@@ -99,6 +98,8 @@ height: 20rem;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .main_titulo{
     text-align: center;
@@ -114,17 +115,28 @@ height: 20rem;
 }
 
 
+.secciones_section{
+    background-color: var(--color-secundario);
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
 
-.section1__parrafo,.section2__parrafo,.section3__parrafo{
+.section__parrafo{
     text-align: center;
     background-color: var(--color-secundario);
     color: white;
     width: 30%;
 }
-.section1_compras,.section2_compras,.section3_compras{
+.section_compras{
     display: flex;
     justify-content: end;
 }
+
+
 
 
 .compras__megusta,.compras__carrito{
@@ -133,16 +145,60 @@ height: 20rem;
 
 
 
-.section1__img,.section2__img,.section3__img{
+.section__img{
     width: 20rem;
+}
+
+
+.main-reseñas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-reseñas_seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2rem;
+    gap:2rem;
+}
+
+.seccion__articulos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secundario);
+    width: 60%;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
+.articulos__nombreusuario{
+    font-size: 2rem;
+}
+.articulos__estrellas{
+    width: 5rem;
+}
+
+.articulos__asunto{
+    font-size: 2rem;
+}
+
+.articulos__opinion{
+    font-size: 1.5rem;
+}
 
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--color-principal);
     margin-top: 2rem;
 }
