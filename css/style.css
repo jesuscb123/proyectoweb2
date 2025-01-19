@@ -6,6 +6,11 @@
 }
 
 
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color:black;
+}
 
 body{
     box-sizing: border-box;
@@ -113,10 +118,6 @@ font-size: 3rem;
 
 
 .main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -222,12 +223,7 @@ font-size: 3rem;
 }
 
 
-.main-reseñas{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .main_reseñas{
     display: flex;
@@ -248,6 +244,7 @@ font-size: 3rem;
     background-color: var(--color-secundario);
     width: 30rem;
     border-radius: 2rem;
+    padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -275,11 +272,16 @@ font-size: 3rem;
     background-color: var(--color-secundario);
     width: 30rem;
     border-radius: 2rem;
+    padding-top:2rem;
     padding-left: 20rem;
     padding-right: 20rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.foto__usuario{
+    width: 7rem;
+    height: 7rem;
+}
 .articulos__nombreusuario{
     font-size: 1.5rem;
 }
@@ -338,6 +340,40 @@ font-size: 3rem;
 
 
 
+.main_perfil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:45rem;
+    margin-right: 45rem;
+    background-color: var(--color-secundario);
+    padding: 5rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    gap:0.5rem;
+    }
+
+
+.perfil__tarjeta{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.perfil__imagen{
+    width: 13rem;
+    height: 13rem;
+}
+
+.perfil__tiempousuario{
+    font-size: 0.8rem;
+}
+
+.datos__titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -374,6 +410,6 @@ font-size: 3rem;
 
 
 #spotify{
-    width: 16rem;
+    width: 19rem;
     height: 10rem;
 }

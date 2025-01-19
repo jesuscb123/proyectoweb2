@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas</title>
+    <title>Perfil usuario</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -41,84 +41,23 @@
 
 
     <main class="main">
-        <h3 class="main_titulo">Reseñas destacadas</h3>
-        <section class="main_reseñas">
-            <article class="reseñas__destacadas">
-                <p class="articulos__nombreusuario">Pepe</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">La mejor compra que he hecho en mucho tiempo!</p>
-                <p class="articulos__opinion">No puedo estar más contento con este disco. Desde el momento en que lo vi en la página, supe que tenía que ser mío, pero lo que me sorprendió fue lo rápido que llegó y lo impecable que estaba el empaque. ¡Parecía que me lo entregaron directamente desde el estudio!</p>
-            </article>
-
-            <article class="reseñas__destacadas">
-                <p class="articulos__nombreusuario">Juan</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">La mejor compra que he hecho en mucho tiempo!</p>
-                <p class="articulos__opinion">La experiencia de compra fue perfecta de principio a fin. Desde que lo pedí, no podía esperar para tenerlo en mis manos, y cuando llegó, superó todas mis expectativas.
-
-                    La calidad es impecable, el vinilo (o CD) está en perfectas condiciones, y la música... ¡madre mía! Se escucha con una claridad que me transporta a otro nivel. Es como si estuviera en el estudio con el artista. Además, la edición es hermosa, con un diseño que brilla en mi colección.</p>
-            </article>
-
-            <article class="reseñas__destacadas">
-                <p class="articulos__nombreusuario">Manuel</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">¡Increíble de principio a fin!</p>
-                <p class="articulos__opinion">WOW! Estoy completamente alucinado con este disco. No solo llegó rapidísimo, sino que la calidad es de otro planeta. Desde que lo puse por primera vez, no he podido parar de escucharlo. Cada canción suena mejor que en mis sueños, ¡es una experiencia totalmente inmersiva!</p>
-            </article>
-        </section>
-
-        <hr class="main_separador">
-
-        <section class="main_otrasreseñas">
-            <h3 class="otrasreseñas__titulo">Otras reseñas</h3>
-            <article class="otrasreseñas__articulos">
-                <p class="articulos__nombreusuario">Pepe</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">La mejor compra que he hecho en mucho tiempo!</p>
-                <p class="articulos__opinion">No puedo estar más contento con este disco. Desde el momento en que lo vi en la página, supe que tenía que ser mío, pero lo que me sorprendió fue lo rápido que llegó y lo impecable que estaba el empaque. ¡Parecía que me lo entregaron directamente desde el estudio!</p>
-            </article>
-
+        <h3 class="main_titulo">Tarjeta de usuario</h3>
+        <section class="main_perfil">
+            <p class="perfil__tarjeta">Kimicorap98</p>
+            <img alt="foto_usuario" class="perfil__imagen" src="./images/fotoperfil.png">
+            <p class="perfil__tiempousuario">Usuario registrado desde: 19/01/2025</p>
             
-            <article class="otrasreseñas__articulos">
-                <p class="articulos__nombreusuario">Juan</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">La mejor compra que he hecho en mucho tiempo!</p>
-                <p class="articulos__opinion">La experiencia de compra fue perfecta de principio a fin. Desde que lo pedí, no podía esperar para tenerlo en mis manos, y cuando llegó, superó todas mis expectativas.
-
-                    La calidad es impecable, el vinilo (o CD) está en perfectas condiciones, y la música... ¡madre mía! Se escucha con una claridad que me transporta a otro nivel. Es como si estuviera en el estudio con el artista. Además, la edición es hermosa, con un diseño que brilla en mi colección.</p>
-            </article>
-
-            
-            <article class="otrasreseñas__articulos">
-                <p class="articulos__nombreusuario">Manuel</p>
-                <img class="articulos__estrellas" src="./images/estrellas.png">
-                <p class="articulos__asunto">¡Increíble de principio a fin!</p>
-                <p class="articulos__opinion">WOW! Estoy completamente alucinado con este disco. No solo llegó rapidísimo, sino que la calidad es de otro planeta. Desde que lo puse por primera vez, no he podido parar de escucharlo. Cada canción suena mejor que en mis sueños, ¡es una experiencia totalmente inmersiva!</p>
-            </article>
+            <section class="perfil__datos">
+                <p class="datos__titulo">Nombre completo</p>
+                <p class="datos__usuario">Jesús Conde Barba</p>
+                <p class="datos__titulo">Correo</p>
+                <p class="datos__usuario">jconbar633@g.educaand.es</p>
+                <p class="datos__titulo">Teléfono</p>
+                <p class="datos__usuario">650324576</p>
+            </section>
         </section>
-
+        
         <hr class="main_separador">
-
-        <section class="main_formulario">
-            <h3 class="formulario__titulo">Escribe tu reseña aquí</h3>
-            <form method="Post" class="formulario__reseña">
-                <label class="reseña__nombre">
-                    <p class="nombre__pedirnombre">Nombre completo</p>
-                    <input type="text" class="nombre__insertar">
-                </label>
-                <label class="reseña__correo">
-                    <p class="correo__pedircorreo">Email:</p>
-                    <input type="email" class="correo__insertar">
-                </label>
-                <label class="reseña__escribir">
-                    <p class="escribir__pedirreseña">Danos tu opinión</p>
-                    <textarea name="reseña" rows="5" cols="40" class="escribir__reseña"></textarea>
-                </label>
-                <label class="reseña__enviar">
-                    <button type="submit">Enviar reseña</button>
-                </label>
-            </form>
-        </section>
 
     </main>
     <footer class="footer">
