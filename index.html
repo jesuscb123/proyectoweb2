@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto2web</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <section class="header_encabezado">
-            <img class="encabezado__img" src="./images/bannerdefinitivo.png"> 
+            <img class="encabezado__logo" src="./images/Logo_Pagina_Web.png">
+            <p class="encabezado__titulo">UniversalDiscos</p> 
         </section>
 
         <section class="header_navegador">
-            <img class="navegador__logo" src="./images/Logo_Pagina_Web.png">
             <nav class="navegador_nav">
                 <ul class="nav__ul">
-                    <li class="ul__navegador"><a href="./index.html" class="ul__enlace"></a>Index</li>
+                    <li class="ul__navegador"><a href="./index.html" class="ul__enlace">Index</a></li>
                     <li class="ul__navegador"><a href="./index.html" class="ul__enlace"></a>Sitio2</li>
                     <li class="ul__navegador"><a href="./reseñas.html" class="ul__enlace">Reseñas</a></li>
                     <li class="ul__navegador"><a href="./index.html" class="ul__enlace"></a>Sitio4</li>
@@ -25,17 +25,26 @@
 
             <section class="navegador_busqueda">
                 <form class="busqueda_form">
-                    <input type="text" class="form__busqueda">
+                    <input type="text" class="form__busqueda" placeholder="Busca un producto aquí...">
                 </form>
                 <img class="busqueda__img" src="./images/lupa.png">
             </section>
+
+            <section class="navegador_login">
+                <p class="login__texto">Login/Sing In</p>
+                <img class="login__icono" src="./images/acceso.png">
+            </section>
+
         </section>
     </header>
 
 
 
     <main class="main">
+        <h3 class="main_titulo">Últimas publicaciones</h3>
+
         <section class="main_secciones">
+
             <section class="secciones_section">
                 <p class="section__parrafo">Hoke - BBO</p>
                 <img class="section__img" src="./images/HOKE.jpeg">
@@ -62,18 +71,40 @@
                     <img class="compras__megusta" src="./images/megusta.png">
                 </section>
             </section>
+        
+        </section>
+        <hr class="main_separador">
+        <section class="main_carrusel">
+            <h3 class="carrusel_titulo">Otros discos disponibles</h3>
+            <section class="carrusel__imagenes">
+                <article class="imagenes__img">
+                    <img src="./images/hardgz_versus.jpg" alt="Imagen 1" class="img__disco">
+                </article>
+                <article class="imagenes__img">
+                    <img src="./images/piezas_panoramica.jpg" alt="Imagen 2" class="img__disco">
+                </article>
+                <article class="imagenes__img">
+                    <img src="./images/sfdk_2005.jpg" alt="Imagen 3" class="img__disco">
+                </article>
+                    
+            </section>
+        </section>
+        <hr class="main_separador">
+        <section class="main_reproductor">
+            <h3 class="reproductor__titulo">Escucha nuestra música en directo</h3>
+            <audio controls>
+                <source src="tu-cancion.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+              </audio>
         </section>
 
     </main>
     <footer class="footer">
         <p class="footer_parrafo">UniversalDiscos. Todos los derechos reservados.</p>
-        <img class="footer_img" src="./images/Logo_Pagina_Web.png">
-        <form class="footer_form"method="post">
-            <label class="form__nombre">
-                <p class="nombre__newsletter">Nombre completo:</p>
-                <input class="nombre__boton" type="text">
-            </label>
-        </form>
-    </footer>
+    <section class="footer_marcas">
+        <img alt="spotify" class="marcas__imagenes" id="spotify" src="./images/spotify.png">
+        <img alt="sony" class="marcas__imagenes" src="./images/sony.png">
+    </section>
+</footer>
 </body>
 </html>

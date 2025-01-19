@@ -1,7 +1,7 @@
 :root{
-    --color-principal: rgb(205, 78, 78);
-    --color-secundario: rgb(26, 90, 128);
-    --color-body: rgb(171, 170, 170);
+    --color-principal: rgb(26, 90, 128);
+    --color-secundario: rgb(100, 129, 145);
+    --color-body: rgb(199, 206, 207);
 
 }
 
@@ -17,24 +17,31 @@ body{
 
 .header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content:  space-evenly;
     align-items: center;
-    background-color: var(--color-principal);
 
 }
 
 .header_encabezado{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: var(--color-principal);
 }
 
-.encabezado__img{
-width: 100%;
-height: 20rem;
+.encabezado__titulo{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 3rem;
+}
+
+.encabezado__logo{
+    width: 10rem;
+    height: 10rem;
 }
 
 
@@ -44,16 +51,17 @@ height: 20rem;
 
 .header_navegador{
     display: flex;
-    background-color: var(--color-principal);
+    flex-wrap: wrap;
+    background-color: var(--color-secundario);
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.navegador__logo{
-    width: 10rem;
+.navegador_nav{
+    display: flex;
+    flex-wrap: wrap;
 }
-
 
 .nav__ul{
     display: flex;
@@ -85,11 +93,23 @@ height: 20rem;
     transition: box-shadow 0.3s ease; 
 }
 
+.navegador_login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+
+.login__icono{
+    width: 30px;
+    height: 30px;
+}
 
 .ul__navegador{
     list-style-type: none;
     font-size: 1.2rem;
 }
+
 
 
 .main{
@@ -98,12 +118,19 @@ height: 20rem;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+}
+
+.main_separador {
+    border: 0;
+    height: 2px; 
+    margin: 20px 0; 
+    background: linear-gradient(to right, transparent, var(--color-secundario), transparent);
 }
 .main_titulo{
-    text-align: center;
-    font-size: 2.5rem;
+ text-align: center;
+ font-size: 2rem;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .main_secciones{
@@ -113,6 +140,7 @@ height: 20rem;
     justify-content: space-evenly;
     align-items: center;
 }
+
 
 
 .secciones_section{
@@ -136,13 +164,57 @@ height: 20rem;
     justify-content: end;
 }
 
+.main_reproductor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
 
+.main_carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carrusel_titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.carrusel__imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imagenes__img{
+     background-color: var(--color-secundario);
+     gap: 3rem;
+     padding-top: 1rem;
+     padding-right: 1rem;
+     padding-bottom: 1rem;
+     padding-left: 1rem;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+     border-radius: 2rem;
+}
+
+.img__disco{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--color-secundario);
+}
 
 
 .compras__megusta,.compras__carrito{
     width: 30px;
 }
-
 
 
 .section__img{
@@ -157,9 +229,9 @@ height: 20rem;
     align-items: center;
 }
 
-.main-reseñas_seccion{
+.main_reseñas{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -167,42 +239,141 @@ height: 20rem;
     gap:2rem;
 }
 
-.seccion__articulos{
+.reseñas__destacadas{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-secundario);
-    width: 60%;
+    width: 30rem;
     border-radius: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.main_otrasreseñas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
 
-.articulos__nombreusuario{
+}
+
+.otrasreseñas__titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
 }
+.otrasreseñas__articulos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-secundario);
+    width: 30rem;
+    border-radius: 2rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.articulos__nombreusuario{
+    font-size: 1.5rem;
+}
 .articulos__estrellas{
-    width: 5rem;
+    width: 3rem;
 }
 
 .articulos__asunto{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .articulos__opinion{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
+
+.main_formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.formulario__reseña{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    padding: 5rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    gap:1rem;
+
+}
+
+.reseña__nombre,.reseña__correo,.reseña__escribir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.nombre__pedirnombre,.correo__pedircorreo,.escribir__pedirreseña{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 
 .footer{
     display: flex;
     flex-direction: column;
     background-color: var(--color-principal);
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
 }
 
-.footer_img{
-    width: 50px;
+
+.footer_derechos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.derechos__logo{
+    width: 6rem;
+}
+.footer_marcas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.marcas__imagenes{
+    width: 9rem;
+    height: 9rem;
+}
+
+
+#spotify{
+    width: 16rem;
+    height: 10rem;
 }
